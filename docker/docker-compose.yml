@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+  global_mysql:
+    build:
+      context: ./mysql/
+    container_name: global_mysql
+    volumes:
+      - ./mysql/data:/app-file"
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:3306:3306"
+    restart: always
