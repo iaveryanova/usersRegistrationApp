@@ -1,5 +1,6 @@
 1) Start react app
 
+``npm install``
 ``npm start``
 
 2) Go to ***api*** folder
